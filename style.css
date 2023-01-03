@@ -1,0 +1,27 @@
+/* Aqui empieza el apartado del footer */
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: #2b3035;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+#textFooter{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:flex-start;
+    margin-right: 42.5rem;
+}
+footer p{
+color: white;
+margin: .3125rem;
+}
+
+footer img{
+    height: 8vh ;
+    width: 4vw ;
+}

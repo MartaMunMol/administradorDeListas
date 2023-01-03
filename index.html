@@ -44,7 +44,50 @@
             </div>
           </nav>
 
-          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quaerat eum iure inventore quo, harum veniam aperiam fugiat! Repellat, maiores! Quasi aliquam quibusdam voluptas nesciunt ut quo, quisquam nemo, fugit et repellat nisi dolore accusantium eaque veritatis esse architecto tempore quis vero, excepturi explicabo voluptates sapiente! Nam doloribus qui sequi.</div>
+          <div id="bodyDiv">
+            <div id="tableCnt">
+              <table>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellidos</th>
+                  <th>Email</th>
+                  <th>telefono</th>
+                </tr>
+                <tr>
+                  <td>Perico</td>
+                  <td>Eldelos Palotes</td>
+                  <td>myemail@gmail.com</td>
+                  <td>666123456</td>
+                </tr>
+              </table>
+            </div>
+            <div id="formularyCtn">
+              <h1>Lista de alumnos</h1>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                     <li>
+                       <label for="name">Nombre:</label>
+                       <input type="text" id="name" name="user_name">
+                     </li>
+                     <li>
+                       <label for="surname">Apellidos</label>
+                       <input type="email" id="mail" name="user_mail">
+                     </li>
+                     <li>
+                       <label for="mail">Email</label>
+                       <textarea id="msg" name="user_message"></textarea>
+                     </li>
+                     <li>
+                        <label for="tlfn">Telefono</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </li>
+                     <li class="button">
+                        <button type="submit">Envíe su mensaje</button>
+                      </li>
+                    </ul>
+                   </form>
+            </div>
+          </div>
 
 
           <!-- Apartado footer -->

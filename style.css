@@ -1,3 +1,67 @@
+body{
+    background: rgb(255,166,158);
+    background: linear-gradient(180deg, rgba(255,166,158,1) 34%, rgba(250,243,221,1) 100%);
+}
+
+#bodyDiv{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+/* Estilos de la tabla */
+
+#tableCnt{
+    height: 75vh;
+    width: 40vw;
+    background-color: #AED9E0;
+    border-radius: 2.4375rem;
+    position: absolute;
+    margin-left: 14.375rem;
+    margin-top: 3.125rem;
+}
+table{
+    margin:0 auto;
+    margin-top: 1.25rem;
+    width: 90%;
+    background-color: white;
+    
+}
+/* table, th, td{
+    border: 1px solid black;
+} */
+
+th{
+    background-color: #5E6472;
+    color: white;
+    
+}
+
+/* Estilos del formulario */
+#formularyCtn{
+    height: 90vh;
+    width: 60vw;
+    background-color: white;
+    border-radius: 2.4375rem;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-left: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    margin-left: 11.25rem;
+}
+form ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+
 /* Aqui empieza el apartado del footer */
 footer{
     height: 10vh;

@@ -19,6 +19,7 @@ body{
     position: absolute;
     margin-left: 14.375rem;
     margin-top: 3.125rem;
+    overflow-y: scroll;
 }
 table{
     margin:0 auto;

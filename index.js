@@ -1,3 +1,4 @@
+//interacción entre formulario y tabla
 let formulario = document.getElementById('form');
 
 formulario.addEventListener("submit", function(event){
@@ -18,3 +19,4 @@ formulario.addEventListener("submit", function(event){
     newTableCell =newTableRow.insertCell(3);
     newTableCell.textContent= formData.get("userTlfn");
 })
+

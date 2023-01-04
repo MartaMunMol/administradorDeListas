@@ -5,7 +5,7 @@ formulario.addEventListener("submit", function(event){
     event.preventDefault();
     let formData = new FormData (formulario);
     let tablaVar = document.getElementById("tablaId");
-    let newTableRow = tablaVar.insertRow(2);
+    let newTableRow = tablaVar.insertRow(1);
 
     let newTableCell = newTableRow.insertCell(0);
     newTableCell.textContent = formData.get("userName");

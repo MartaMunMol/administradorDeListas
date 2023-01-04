@@ -44,9 +44,10 @@
             </div>
           </nav>
 
-          <div id="bodyDiv">
+          <section id="bodyDiv">
+
             <div id="tableCnt">
-              <table>
+              <table id="tablaId">
                 <tr>
                   <th>Nombre</th>
                   <th>Apellidos</th>
@@ -60,35 +61,40 @@
                   <td>666123456</td>
                 </tr>
               </table>
+
+              <div id="tableBtnCtn">
+                <button>Guardar lista</button>
+                <button>Cargar lista</button>
+               </div>
             </div>
-            <div id="formularyCtn">
+
+            <div id="formCtn">
               <h1>Lista de alumnos</h1>
-                <form action="/my-handling-form-page" method="post">
+                <form action="/my-handling-form-page" method="post" id="form">
                     <ul>
                      <li>
                        <label for="name">Nombre:</label>
-                       <input type="text" id="name" name="user_name">
+                       <input type="text" id="name" name="userName">
                      </li>
                      <li>
                        <label for="surname">Apellidos</label>
-                       <input type="email" id="mail" name="user_mail">
+                       <input type="text" id="surname" name="userSurname">
                      </li>
                      <li>
                        <label for="mail">Email</label>
-                       <textarea id="msg" name="user_message"></textarea>
+                       <input type="email" id="mail" name="userEmail">
                      </li>
                      <li>
-                        <label for="tlfn">Telefono</label>
-                        <textarea id="msg" name="user_message"></textarea>
+                        <label for="tlfnNum">Telefono</label>
+                        <input type="number" id="tlfnNum" name="userTlfn">
                       </li>
                      <li class="button">
-                        <button type="submit">Envíe su mensaje</button>
+                        <button type="submit">Enviar</button>
                       </li>
                     </ul>
                    </form>
             </div>
-          </div>
-
+          </section>
 
           <!-- Apartado footer -->
         <footer>

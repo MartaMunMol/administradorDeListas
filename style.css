@@ -25,20 +25,37 @@ table{
     margin-top: 1.25rem;
     width: 90%;
     background-color: white;
-    
 }
-/* table, th, td{
-    border: 1px solid black;
-} */
 
+tr{
+    background-color: white;
+    height: .625rem;
+    width: 100%;
+}
 th{
     background-color: #5E6472;
     color: white;
+}
+
+td{
+    border: 1px solid #5E6472;
+    height: .625rem;
     
 }
 
+#tableBtnCtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: .625rem;
+}
+
+#tableBtnCtn button{
+    margin: .3125rem;
+}
+
 /* Estilos del formulario */
-#formularyCtn{
+#formCtn{
     height: 90vh;
     width: 60vw;
     background-color: white;

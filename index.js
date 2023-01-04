@@ -1,0 +1,20 @@
+let formulario = document.getElementById('form');
+
+formulario.addEventListener("submit", function(event){
+    event.preventDefault();
+    let formData = new FormData (formulario);
+    let tablaVar = document.getElementById("tablaId");
+    let newTableRow = tablaVar.insertRow(2);
+
+    let newTableCell = newTableRow.insertCell(0);
+    newTableCell.textContent = formData.get("userName");
+    
+    newTableCell =newTableRow.insertCell(1);
+    newTableCell.textContent= formData.get("userSurname");;
+
+    newTableCell =newTableRow.insertCell(2);
+    newTableCell.textContent= formData.get("userEmail");
+
+    newTableCell =newTableRow.insertCell(3);
+    newTableCell.textContent= formData.get("userTlfn");
+})

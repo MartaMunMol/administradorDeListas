@@ -1,0 +1,288 @@
+body{
+    background: rgb(255,166,158);
+    background: linear-gradient(180deg, rgba(255,166,158,1) 34%, rgba(250,243,221,1) 100%);
+}
+
+#bodyDiv{
+    /* height: 100vh;
+    width: 100%; */
+    position: relative;
+    
+}
+/* Estilos de la tabla */
+
+#tableCnt{
+    height: 75vh;
+    width: 40vw;
+    background-color: #AED9E0;
+    border-radius: 2.4375rem;
+    position: absolute;
+    margin-left: 14.375rem;
+    margin-top: 3.125rem;
+    overflow-y: scroll;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}
+table{
+    margin:0 auto;
+    margin-top: 1.25rem;
+    width: 90%;
+    background-color: white;
+}
+
+tr{
+    background-color: white;
+    height: .625rem;
+    width: 100%;
+}
+th{
+    background-color: #5E6472;
+    color: white;
+}
+
+td{
+    border: 1px solid #5E6472;
+    height: .625rem;
+    font-size: .75rem;
+    
+}
+
+#tableBtnCtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: .625rem;
+}
+
+#tableBtnCtn button{
+    margin: .3125rem;
+}
+
+button:hover{
+    background-image:     linear-gradient(
+       to right, 
+       #E7484F,
+       #E7484F 16.65%,
+       #F68B1D 16.65%,
+       #F68B1D 33.3%,
+       #FCED00 33.3%,
+       #FCED00 49.95%,
+       #009E4F 49.95%,
+       #009E4F 66.6%,
+       #00AAC3 66.6%,
+       #00AAC3 83.25%,
+       #732982 83.25%,
+       #732982 100%,
+       #E7484F 100%
+      
+      
+      
+     );
+   animation:slidebg 2s linear infinite;
+ }
+ 
+ 
+ @keyframes slidebg {
+   to {
+     background-position:20vw;
+   }
+ }
+ 
+ .follow{
+   margin-top: 40px;
+ }
+ 
+ .follow a{
+   color: black;
+   padding: 8px 16px;
+   text-decoration: none;
+ }
+
+/* Estilos del formulario */
+#formCtn{
+    height: 90vh;
+    width: 60vw;
+    background-color: white;
+    border-radius: 2.4375rem;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 30vw;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+form input{
+    width: 100%;
+    padding: .6em .3em;
+    background-color: #E2E2E2;
+    border: none;
+}
+h2{
+    margin-left: 12.5rem;
+    margin-top: -200px;
+}
+
+#form{
+    margin-bottom: 5rem;
+    margin-left: 11.25rem;
+    width: 90%;
+}
+
+form ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+#submitButton{
+    margin-top: 1.875rem; 
+    margin-left: 2.8125rem;
+    width: 80%;
+    height: 2.1875rem;
+    border: none;
+    border-radius: 2.4375rem;
+    background-color: #B8F2E6;
+    color: white;
+}
+
+form label{
+    color: #2b3035;
+    cursor: pointer;
+    left: .3125rem;
+}
+
+/* Aqui empieza el apartado del footer */
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: #2b3035;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+#textFooter{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:flex-start;
+    margin-right: 42.5rem;
+}
+footer p{
+color: white;
+margin: .3125rem;
+}
+
+footer img{
+    height: 8vh ;
+    width: 4vw ;
+}
+/* RESPONSIVE MOBILE*/
+
+@media (max-width: 450px){
+    #bodyDiv{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #tableCnt{
+        height: 60vh;
+        width: 90%;
+        position: inherit;
+        margin: 0 auto;
+        margin-top: 1.25rem;
+    }
+
+   th{
+    font-size: .875rem;
+   }
+
+   td{
+    font-size: .75rem;
+   }
+
+    #formCtn{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+        height: 60vh;
+        margin-top: .625rem;
+        margin-bottom: .9375rem;
+    }
+
+    #form{
+        margin: 0 auto;
+    }
+
+    footer{
+        height: 15vh;
+        width: 100%;
+    }
+
+    #textFooter{
+        font-size: .625rem;
+        margin: 0;
+        display: flex;
+        flex-direction: row nowrap;
+        padding: .3125rem;
+    }
+
+    footer img{
+        height: 6vh;
+        width: 8vw;
+        margin-left: .3125rem;
+    }
+}
+
+/* RESPONSIVE FORMATO IPAD/TABLET
+@media (max-width: 914px) {
+
+    #bodyDiv{
+        width: 100%;
+        height: 100%;
+    }
+
+    #tableCnt{
+        height: 50vh;
+        width: 50%;
+        margin: 0 auto;
+        margin-left: 1.25rem;
+        margin-top: 1.25rem;
+    }
+
+    #formCtn{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+        height: 60vh;
+        margin-top: 9.375rem;
+        margin-bottom: 9.1875rem;
+        margin-left: 140px;
+    }
+
+    #form{
+        height: 50%;
+        width: 55%;
+        margin-left: 15.625rem;
+    }
+
+    #textFooter{
+        margin: 0;
+    }
+    
+    #imgFooterId{
+        display: flex;
+        flex-direction: row nowrap;
+    }
+
+    footer img{
+        height: 1.875rem;
+        width: 1.875rem;
+    }
+}   */

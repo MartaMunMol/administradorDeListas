@@ -42,4 +42,3 @@ formulario.addEventListener("submit", function cargarFormulario(event){
         }
       )
  })
-
